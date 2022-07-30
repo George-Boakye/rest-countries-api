@@ -113,6 +113,8 @@ figure img {
   cursor: pointer;
   display: flex;
   gap: 0 10px;
+  margin-bottom: 40px;
+  border-radius: 6px;
 }
 h1 {
   margin-bottom: 50px;
