@@ -1,30 +1,50 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <TheHeader />
+  <router-view />
 </template>
 
+<script>
+import TheHeader from "./components/TheHeader.vue";
+export default {
+  components: {
+    TheHeader,
+    TheHeader,
+  },
+  data() {
+    return {
+      darkMode: false,
+      dark: "theme-dark",
+      light: "theme-light",
+    };
+  },
+  methods: {
+    toggle() {
+      this.darkMode = !this.darkMode;
+    },
+  },
+};
+</script>
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap");
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  font-family: "Nunito Sans", sans-serif;
 }
-
-nav {
-  padding: 30px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.header {
+  padding: 20px 60px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.theme {
+  cursor: pointer;
 }
 </style>
