@@ -105,6 +105,10 @@ export default {
 
 }
 
+figure img{
+  color: var(--text-primary-color);
+}
+
 select,
 input {
   padding: 10px;
@@ -114,7 +118,9 @@ input {
   background: var(--background-color-secondary);
   color: var(--text-primary-color);
 }
-
+input::placeholder{
+    color: var(--text-primary-color);
+}
 
 @media only screen and (max-width: 600px) {
   .home{
