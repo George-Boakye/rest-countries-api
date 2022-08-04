@@ -15,33 +15,33 @@
         <div>
           <div class="upperInfo">
             <div class="left">
-              <p>
-                Native name: {{ singleCountry.name?.nativeName?.kal?.official }}
+              <p><strong>
+                Native name</strong> : {{ singleCountry.name?.nativeName?.kal?.official }}
               </p>
-              <p>Population:{{ singleCountry.population }}</p>
-              <p>Region:{{ singleCountry.region }}</p>
-              <p>Sub Region:{{ singleCountry.subregion }}</p>
-              <p>
-                Capital(s):<span
+              <p><strong> Population </strong>: {{ singleCountry.population }}</p>
+              <p><strong> Region </strong>: {{ singleCountry.region }}</p>
+              <p><strong> Sub Region </strong>: {{ singleCountry.subregion }}</p>
+              <p><strong> 
+                Capital(s)</strong>: <span
                   v-for="capital in singleCountry.capital"
                   :key="capital"
                 >
-                  {{ capital }},</span
+                   {{ capital }},</span
                 >
               </p>
             </div>
             <div class="right">
               <!-- <p>Top Level Domain:{{singleCountry}}</p> -->
               <p>
-                Currencies:<span
+                <strong>Currencies</strong>: <span
                   v-for="currency in singleCountry.currencies"
                   :key="currency"
                   >{{ currency.name }},</span
                 >
               </p>
               <p>
-                Languages:
-                <span
+                <strong>Languages</strong>:
+                 <span
                   v-for="language in singleCountry.languages"
                   :key="language"
                   >{{ language }},</span
@@ -52,7 +52,7 @@
         </div>
         <div class="lowerInfo">
           <p>
-            Border Countries:
+            <strong>Border Countries</strong>:
             <span v-for="border in singleCountry.borders" :key="border">
               {{ border }}{{ "," + "  " }}</span
             >
