@@ -1,5 +1,4 @@
 <template>
-  <keep-alive></keep-alive>
   <div class="home">
     <div class="inputs">
       <div class="search">
@@ -76,6 +75,7 @@ export default {
 <style scoped>
 .home {
   padding: 40px 60px;
+  background: var(--background-color-primary);
 }
 
 .search,
@@ -89,6 +89,7 @@ export default {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+  background: var(--background-color-secondary);
 }
 
 .search{
@@ -100,6 +101,7 @@ export default {
 .inputs {
   display: flex;
   justify-content: space-between;
+  background: var(--background-color-primary);
 
 }
 
@@ -109,6 +111,8 @@ input {
   border: none;
   width: 250px;
   outline: none;
+  background: var(--background-color-secondary);
+  color: var(--text-primary-color);
 }
 
 

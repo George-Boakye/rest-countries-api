@@ -16,10 +16,10 @@
       </figure>
       <div class="info">
         <h3>{{ country.name.common }}</h3>
-        <p>Population:{{ country.population }}</p>
-        <p>Region:{{ country.region }}</p>
+        <p><strong>Population</strong>: {{ country.population }}</p>
+        <p><strong>Region</strong>: {{ country.region }}</p>
         <p class="card-text-capital" v-if="country.capital">
-          Capital:
+          <strong>Capital</strong>:
           <span v-for="(capital, index) in country.capital" :key="index">{{
             capital
           }}</span>
@@ -45,7 +45,7 @@ h3 {
   font-weight: 800;
   font-size: 18px;
   line-height: 26px;
-  color: #111517;
+  color:var(--text-primary-color);
   margin-bottom: 16px;
 }
 
@@ -58,6 +58,8 @@ h3 {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 5px;
+  background: var(--background-color-secondary);
+  color: var(--text-primary-color);
 }
 
 .info {
@@ -84,6 +86,7 @@ h3 {
   justify-content: center;
   grid-template-columns: repeat(4, max-content);
   gap: 75px;
+  background: var(--background-color-primary);
 }
 
 @media only screen and (max-width: 600px) {

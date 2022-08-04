@@ -90,6 +90,8 @@ export default {
 <style scoped>
 .main {
   padding: 40px 60px;
+  background: var(--background-color-primary);
+  color: var(--text-primary-color);
 }
 .container {
   display: flex;
@@ -146,6 +148,7 @@ h1 {
     margin-bottom: 64px;
     justify-content: center;
     padding: 6px;
+    background: var(--background-color-secondary);
   }
 
   figure {
