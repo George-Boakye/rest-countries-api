@@ -117,6 +117,9 @@ figure img {
   gap: 0 10px;
   margin-bottom: 40px;
   border-radius: 6px;
+  background: var(--background-color-secondary);
+  width: max-content;
+  padding: 5px 10px;
 }
 h1 {
   margin-bottom: 50px;
